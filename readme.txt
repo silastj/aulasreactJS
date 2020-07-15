@@ -18,5 +18,53 @@ OQ MAIS IREMOS USAR ANBAIXO:
 Iremos mais utilizar é: Componente / CreateClass / CreateElement
 
 
+Seção2 Modulo React + Webpack
+
+INSTALANDO O WEBPACK
+
+Webpack é um module bundler para compactar na versão do Ecma5 que o browser reconhece.
+Usamos tb no React root loader
+Instalando o webpack => npm install --save-dev webpack
+
+Instalamos webpack / Criamos os arquivos package.json e webpack.config.js
+Depois criamos a pasta src e o arquivo index.js
+
+Para instalar o webpack global
+npm install -g webpack@1
+
+depois digite webpack para executar
+
+INSTALANDO WEBPACK DEV SERVER
+
+npm i --save-dev webpack-dev-server
+
+ADD O PUBLICPATH NO WEBPACK CONFIG
+
+instalando o webpack server global ( servidor de desenvolvimento )
+
+npm install -g webpack-dev-server@1
+
+Digite webpack-dev-server
+
+MODULARIZAR A APLICAÇÃO
+Criaremos um arquivo no src app.js
+
+Como funciona o module require e commonJS
+
+CRIANDO UMA APLICAÇÃO EM REACT
+
+Instalando dependencias react reactDOM
+
+npm install --save react react-dom
+
+
+Criando um componente
+
+OBS: Usamos o creatElement no lugar do JSX ... 
+Para usar o jsx é preciso isntalar o babell
+
+Para rodar nessa versão anterior precisamos rodar esses comandos
+npm install --save react@15.4 react-dom@15.4
+
 
 
