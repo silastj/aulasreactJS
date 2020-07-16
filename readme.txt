@@ -66,5 +66,53 @@ Para usar o jsx é preciso isntalar o babell
 Para rodar nessa versão anterior precisamos rodar esses comandos
 npm install --save react@15.4 react-dom@15.4
 
+INSTALANDO O babell
+
+dependências do babel:
+
+npm install --save-dev babel-core@6 babel-loader@6 babel-preset-es2015@6 babel-preset-stage-0@6
+
+Precisa criar um arquivo babelrc/ configurar  e depois alterar o arquivo webpackconfig.js
+
+Deu um problema com o babell, mas atualizei a verão 8 que precisa da 7 que roda oq estou precisando
+
+  npm install -D babel-loader@latest @babel/core@latest @babel/preset-env@latest
+
+MUDAREMOS O MODULE EXPORTS
+ANTES=> ( module.exports = Title )
+
+P/ EXPORT DEFAULT
+DEPOIS => ( export default Title )
+
+E O IMPORT 
+
+ANTES => var Title = require('./app');
+DEPOIS => import Title from './app';
+
+ANTES=> var React = require('react');
+DEPOIS => 
+
+Para setar o caminho colocaremos para quando precisar, sem barra ( / ) ele vai direto na pasta node_modulos
+
+Podemos dar um nome: ( import { render } from 'react-dom'; ) ou ( import { render as render } from 'react-dom';)
+
+
+JSX Para não ficar criando (React.creatElement) 
+
+npm install --save-dev babel-preset-react
+
+ANTES =>  return React.createElement('h1', null, 'Título')
+DEPOIS => return <h1>Titulo</h1>
+
+ANTES => return React.createElement(Title),
+DEPOIS => <Title/>,
+
+SOURCEMAPS COM WEBPACK => Ele cria uma mapa do arquivo principal
+
+Após a configuração no webpackconfig.js colamos o devtool 
+
+
+
+
 
 
