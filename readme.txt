@@ -1,7 +1,7 @@
-Fernando Daciuk
+--- Fernando Daciuk
 
 
-QUAIS PROBLEMAS O REACT RESOLVE?
+>>>> QUAIS PROBLEMAS O REACT RESOLVE?
 
 Modularização( Eparação de responsabilidades);
 Componentização;
@@ -9,18 +9,18 @@ Perfimance( manipulação de DOM);
 
 https://pt-br.reactjs.org/docs/getting-started.html
 
-IREMOS CHAMAR ESSES LINKS ABAIXO O REACT E O REACT DOM
+>>>> IREMOS CHAMAR ESSES LINKS ABAIXO O REACT E O REACT DOM
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.13.1/umd/react.production.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.13.1/umd/react-dom.production.min.js"></script>
 
-OQ MAIS IREMOS USAR ANBAIXO:
+>>>> OQ MAIS IREMOS USAR ANBAIXO:
 Iremos mais utilizar é: Componente / CreateClass / CreateElement
 
 
 Seção2 Modulo React + Webpack
 
-INSTALANDO O WEBPACK
+>>>> INSTALANDO O WEBPACK
 
 Webpack é um module bundler para compactar na versão do Ecma5 que o browser reconhece.
 Usamos tb no React root loader
@@ -34,11 +34,11 @@ npm install -g webpack@1
 
 depois digite webpack para executar
 
-INSTALANDO WEBPACK DEV SERVER
+>>>> INSTALANDO WEBPACK DEV SERVER
 
 npm i --save-dev webpack-dev-server
 
-ADD O PUBLICPATH NO WEBPACK CONFIG
+>>>> ADD O PUBLICPATH NO WEBPACK CONFIG
 
 instalando o webpack server global ( servidor de desenvolvimento )
 
@@ -46,27 +46,27 @@ npm install -g webpack-dev-server@1
 
 Digite webpack-dev-server
 
-MODULARIZAR A APLICAÇÃO
+>>>> MODULARIZAR A APLICAÇÃO
 Criaremos um arquivo no src app.js
 
 Como funciona o module require e commonJS
 
-CRIANDO UMA APLICAÇÃO EM REACT
+>>>> CRIANDO UMA APLICAÇÃO EM REACT
 
 Instalando dependencias react reactDOM
 
 npm install --save react react-dom
 
 
-Criando um componente
+>>>> CRIANDO UM COMPONENTE
 
 OBS: Usamos o creatElement no lugar do JSX ... 
-Para usar o jsx é preciso isntalar o babell
+Para usar o jsx é preciso instalar o babell
 
 Para rodar nessa versão anterior precisamos rodar esses comandos
 npm install --save react@15.4 react-dom@15.4
 
-INSTALANDO O babell
+>>>> INSTALANDO O BABELL
 
 dependências do babel:
 
@@ -78,7 +78,7 @@ Deu um problema com o babell, mas atualizei a verão 8 que precisa da 7 que roda
 
   npm install -D babel-loader@latest @babel/core@latest @babel/preset-env@latest
 
-MUDAREMOS O MODULE EXPORTS
+>>>> MUDAREMOS O MODULE EXPORTS
 ANTES=> ( module.exports = Title )
 
 P/ EXPORT DEFAULT
@@ -97,7 +97,7 @@ Para setar o caminho colocaremos para quando precisar, sem barra ( / ) ele vai d
 Podemos dar um nome: ( import { render } from 'react-dom'; ) ou ( import { render as render } from 'react-dom';)
 
 
-JSX Para não ficar criando (React.creatElement) 
+>>>> JSX Para não ficar criando (React.creatElement) 
 
 npm install --save-dev babel-preset-react
 
@@ -110,6 +110,17 @@ DEPOIS => <Title/>,
 SOURCEMAPS COM WEBPACK => Ele cria uma mapa do arquivo principal
 
 Após a configuração no webpackconfig.js colamos o devtool 
+
+>>>> REACT HOT LOADER
+
+O que seria => Ele só atualiza oq precisa na sua arvore e nao a aplicação inteira
+
+Dica=> quando colocaremos na instalação de algum pacote o ( @ ) é pq queremos a versão exata( 1.1.1a) e não a ultima versão
+
+npm install --save-dev react-hot-loader@3.0.0-beta.2
+
+
+
 
 
 
