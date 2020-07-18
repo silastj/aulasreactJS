@@ -119,8 +119,16 @@ Dica=> quando colocaremos na instalação de algum pacote o ( @ ) é pq queremos
 
 npm install --save-dev react-hot-loader@3.0.0-beta.2
 
+=> Vamos instalar abaixo o standard
+
+npm install --save-dev standard standard-loader@4
+
+Doca=>limpar cache
+npm cache clean --force
 
 
+=> ACHAR ERROS NO WEBPACK VALIDATOR
+npm install --save-dev webpack-validator
 
 
 

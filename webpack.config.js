@@ -24,6 +24,12 @@ module.exports = {
     ],
 
     module: {
+        preLoaders: [{
+            test: /\.js$/,
+            exclude: /node_modules/,
+            include: /src/,
+            loader: 'standard'
+        }],
         rules: [{
             test:/\.js$/,
             exclude: /node_modules/,
@@ -35,3 +41,7 @@ module.exports = {
         hints : false
     }      
 }
+
+
+
+
